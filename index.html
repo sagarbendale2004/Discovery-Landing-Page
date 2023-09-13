@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Nationals Geographics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <!-- Header Section -->
+  <header class="header" data-aos="fade-down" data-aos-duration="3000">
+    <nav>
+      <ul>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Travel</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="logos.png" alt="logo" />
+    </div>
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+
+  <!-- Social -->
+  <div class="social" data-aos="fade-right" data-aos-duration="3000">
+    <ul>
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img2.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Titles -->
+  <div class="content">
+    <div class="title">
+      <div class="main-title">
+        <div id="title-1" data-aos="fade-left" data-aos-duration="3000">
+          <h1>ma</h1>
+        </div>
+        <span class="desc" data-aos="fade-left" data-aos-duration="3000">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit nostrum earum ipsum odio pariatur neque nobis facere
+            excepturi, consequatur fugit quisquam suscipit, aliquam
+            voluptatibus error molestiae molestias accusantium tenetur
+            incidunt.
+          </div>
+        </span>
+        <div id="title-2" data-aos="fade-right" data-aos-duration="3000">
+          <h1>caw</h1>
+        </div>
+        <h2>._bird</h2>
+        <span class="vertical">green winged macaw</span>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="holder">
+        <div class="time" data-aos="slide-down" data-aos-duration="3000">
+          <div>wednesday 10:00am</div>
+          <div>
+            <img src="logos.png" alt="" />
+          </div>
+        </div>
+        <div class="show-name" data-aos="slide-left" data-aos-duration="3000">americans imported rare exotic parrots
+        </div>
+      </div>
+      <div class="buttons" data-aos="zoom-in-up" data-aos-duration="3000">
+        <button class="primary">
+          <i class="fa-solid fa-bell"></i>Remind me to watch
+        </button>
+        <button class="icon-btn-red">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <button><i class="fa-solid fa-share"></i></button>
+      </div>
+      
+      <!-- thumbs here -->
+      <div thumbsSlider="" class="swiper mySwiper" data-aos="flip-right" data-aos-duration="3000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" onclick="changeTitle('ma','caw')">
+            <img src="img1.jpg" />
+          </div>
+          <div class="swiper-slide" onclick="changeTitle('gr','een')">
+            <img src="img3.jpg" />
+          </div>
+          <div class="swiper-slide" onclick="changeTitle('st','wing')">
+            <img src="img4.jpg" />
+          </div>
+          <div class="swiper-slide" onclick="changeTitle('wg','msk')">
+            <img src="img5.jpg" />
+          </div>
+          <div class="swiper-slide" onclick="changeTitle('ma','caw')">
+            <img src="img6.jpg" />
+          </div>
+          <div class="swiper-slide" onclick="changeTitle('bl','red')">
+            <img src="img2.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"
+    integrity="sha512-QwpsxtdZRih55GaU/Ce2Baqoy2tEv9GltjAG8yuTy2k9lHqK7VHHp3wWWe+yITYKZlsT3AaCj49ZxMYPp46iJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
